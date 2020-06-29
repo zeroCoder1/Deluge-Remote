@@ -15,3 +15,9 @@ struct DelugeRemoteApp: App {
         }
     }
 }
+
+struct DelugeRemoteApp_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
