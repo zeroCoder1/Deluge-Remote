@@ -20,6 +20,15 @@ extension Double {
             return "Done"
         }
     }
+    
+    func toTimeString() -> String? {
+        let formatter = DateComponentsFormatter()
+        formatter.allowedUnits = [.month, .day, .hour, .minute]
+        formatter.unitsStyle = .abbreviated
+        return formatter.string(from: TimeInterval(self))
+    }
+    
+    
 
     /// Rounds the double to decimal places value
     func roundTo(places: Int) -> Double {

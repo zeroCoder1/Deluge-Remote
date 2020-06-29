@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4759012424A993EA00926050 /* TorrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759012324A993EA00926050 /* TorrentView.swift */; };
 		4759012524A993EA00926050 /* TorrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759012324A993EA00926050 /* TorrentView.swift */; };
+		4759012724AA524A00926050 /* TorrentPeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759012624AA524A00926050 /* TorrentPeerRow.swift */; };
+		4759012824AA524A00926050 /* TorrentPeerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759012624AA524A00926050 /* TorrentPeerRow.swift */; };
+		4759012B24AA805400926050 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759012A24AA805400926050 /* CircularProgressView.swift */; };
+		4759012C24AA805400926050 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4759012A24AA805400926050 /* CircularProgressView.swift */; };
 		47BFEDD824A8F11E00A5EA7D /* DelugeRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BFEDC524A8F11D00A5EA7D /* DelugeRemoteApp.swift */; };
 		47BFEDD924A8F11E00A5EA7D /* DelugeRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BFEDC524A8F11D00A5EA7D /* DelugeRemoteApp.swift */; };
 		47BFEDDA24A8F11E00A5EA7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BFEDC624A8F11D00A5EA7D /* ContentView.swift */; };
@@ -54,6 +58,8 @@
 
 /* Begin PBXFileReference section */
 		4759012324A993EA00926050 /* TorrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentView.swift; sourceTree = "<group>"; };
+		4759012624AA524A00926050 /* TorrentPeerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorrentPeerRow.swift; sourceTree = "<group>"; };
+		4759012A24AA805400926050 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		47BFEDC524A8F11D00A5EA7D /* DelugeRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelugeRemoteApp.swift; sourceTree = "<group>"; };
 		47BFEDC624A8F11D00A5EA7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47BFEDC724A8F11E00A5EA7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +106,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4759012924AA803C00926050 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				47DF660C24A94A780001D32F /* ContentRow.swift */,
+				4759012A24AA805400926050 /* CircularProgressView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		47BFEDBF24A8F11D00A5EA7D = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +128,7 @@
 		47BFEDC424A8F11D00A5EA7D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4759012924AA803C00926050 /* Components */,
 				47DF660B24A94A5B0001D32F /* Model */,
 				47BFEE2A24A8FF3000A5EA7D /* Torrent */,
 				47BFEE1A24A8FD1800A5EA7D /* Extensions */,
@@ -199,6 +215,7 @@
 				47BFEDF524A8F8EF00A5EA7D /* Torrent.swift */,
 				47DF660F24A953970001D32F /* Torrent+SwiftUI.swift */,
 				47BFEE2D24A900CD00A5EA7D /* TorrentRow.swift */,
+				4759012624AA524A00926050 /* TorrentPeerRow.swift */,
 				47DF660524A911D70001D32F /* TorrentList.swift */,
 				4759012324A993EA00926050 /* TorrentView.swift */,
 			);
@@ -208,7 +225,6 @@
 		47DF660B24A94A5B0001D32F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				47DF660C24A94A780001D32F /* ContentRow.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,9 +341,11 @@
 				4759012424A993EA00926050 /* TorrentView.swift in Sources */,
 				47DF660D24A94A780001D32F /* ContentRow.swift in Sources */,
 				47BFEDFC24A8F8EF00A5EA7D /* DelugeFileProgress.swift in Sources */,
+				4759012B24AA805400926050 /* CircularProgressView.swift in Sources */,
 				47BFEE0424A8F8EF00A5EA7D /* Torrent.swift in Sources */,
 				47DF661024A953970001D32F /* Torrent+SwiftUI.swift in Sources */,
 				47BFEE0224A8F8EF00A5EA7D /* TorrentInfo.swift in Sources */,
+				4759012724AA524A00926050 /* TorrentPeerRow.swift in Sources */,
 				47BFEE0624A8F8EF00A5EA7D /* SessionStatus.swift in Sources */,
 				47BFEDFA24A8F8EF00A5EA7D /* TorrentOverview.swift in Sources */,
 				47BFEE0824A8F8EF00A5EA7D /* TorrentConfig.swift in Sources */,
@@ -347,9 +365,11 @@
 				47BFEE2224A8FD1800A5EA7D /* String.swift in Sources */,
 				47DF660724A911D70001D32F /* TorrentList.swift in Sources */,
 				4759012524A993EA00926050 /* TorrentView.swift in Sources */,
+				4759012824AA524A00926050 /* TorrentPeerRow.swift in Sources */,
 				47BFEDDB24A8F11E00A5EA7D /* ContentView.swift in Sources */,
 				47BFEDD924A8F11E00A5EA7D /* DelugeRemoteApp.swift in Sources */,
 				47DF661124A953970001D32F /* Torrent+SwiftUI.swift in Sources */,
+				4759012C24AA805400926050 /* CircularProgressView.swift in Sources */,
 				47BFEE2024A8FD1800A5EA7D /* Int.swift in Sources */,
 				47BFEE0124A8F8EF00A5EA7D /* Host.swift in Sources */,
 				47BFEDFD24A8F8EF00A5EA7D /* DelugeFileProgress.swift in Sources */,

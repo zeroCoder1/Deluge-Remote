@@ -110,7 +110,8 @@ struct FileMetadata: Decodable {
     let size: Int
 }
 
-struct PeerMetadata: Decodable {
+struct PeerMetadata: Decodable, Identifiable {
+    var id: String { return ip }
     let down_speed: Int
     let ip: String
     let up_speed: Int

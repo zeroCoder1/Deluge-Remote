@@ -44,7 +44,7 @@ struct TorrentRow: View {
                     .accessibility(label: Text("Torrent State: \(torrent.state)"))
                 Spacer()
                 HStack {
-                    Text("↑\(torrent.upload_payload_rate.transferRateString())")
+                    Text("↑ \(torrent.upload_payload_rate.transferRateString())")
                         .foregroundColor(.primary)
                         .lineLimit(1)
                     Text("\(torrent.download_payload_rate.transferRateString()) ↓")

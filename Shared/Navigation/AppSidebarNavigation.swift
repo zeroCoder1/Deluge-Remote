@@ -64,6 +64,7 @@ struct AppSidebarNavigation: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
             #endif
         }
+        .navigationViewStyle(DoubleColumnNavigationViewStyle())
     }
     
     struct Placeholder: View {
