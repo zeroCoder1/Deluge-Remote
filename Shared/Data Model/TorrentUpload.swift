@@ -8,21 +8,21 @@
 
 import Foundation
 
-struct TorrentInfo {
+struct NewTorrentInfo {
     let name: String
     let hash: String
     let isDirectory: Bool
-    let files: FileNode
+    let files: NewTorrentFileNode
 }
 
-struct FileNode {
+struct NewTorrentFileNode {
     let download: Bool?
     let fileName: String
     let path: String?
     let length: Int?
     let isDirectory: Bool
     let index: Int?
-    var children: [FileNode] = []
+    var children: [NewTorrentFileNode] = []
 
     init(fileName: String, json: [String: Any]) {
         self.fileName = fileName
@@ -35,14 +35,14 @@ struct FileNode {
         if let children  = json["contents"] as? [String: Any] {
             for key in children.keys {
                 if let innerContent = children[key] as? [String: Any] {
-                    self.children.append(FileNode(fileName: key, json: innerContent))
+                    self.children.append(NewTorrentFileNode(fileName: key, json: innerContent))
                 }
             }
         }
     }
 }
 
-extension FileNode {
+extension NewTorrentFileNode {
 
     func prettyPrint() {
         print(self.fileName)
@@ -55,7 +55,7 @@ extension FileNode {
         }
     }
 
-    private func printChildrenHelper(node: FileNode) {
+    private func printChildrenHelper(node: NewTorrentFileNode) {
 
         if !node.isDirectory {
             print("\t\t\(node.fileName) - \(node.length?.sizeString() ?? "") ")

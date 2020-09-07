@@ -1,0 +1,95 @@
+{
+  "id": "78772522",
+  "result": {
+    "type": "dir",
+    "contents": {
+      "Top Level Directory": {
+        "priority": 4,
+        "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS",
+        "progress": 0.9999999999999999,
+        "progresses": [
+          688806.35,
+          1134.24,
+          156282.88,
+          82135220.27,
+          33.44
+        ],
+        "type": "dir",
+        "contents": {
+          "Sample": {
+            "priority": 4,
+            "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/Sample",
+            "progress": 1.0,
+            "progresses": [
+              688806.35
+            ],
+            "type": "dir",
+            "contents": {
+              "the.man.sample.mkv": {
+                "priority": 4,
+                "index": 0,
+                "offset": 0,
+                "progress": 1.0,
+                "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/Sample/the.man.who.knew.infinity.2015.limited.1080p.bluray.x264-geckos.sample.mkv",
+                "type": "file",
+                "size": 68880635
+              }
+            },
+            "size": 68880635
+          },
+          "the.man.nfo": {
+            "priority": 4,
+            "index": 4,
+            "offset": 8298144374,
+            "progress": 1.0,
+            "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/the.man.who.knew.infinity.2015.limited.1080p.bluray.x264-geckos.nfo",
+            "type": "file",
+            "size": 3344
+          },
+          "The.Man.mkv": {
+            "priority": 4,
+            "index": 3,
+            "offset": 84622347,
+            "progress": 1.0,
+            "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS.mkv",
+            "type": "file",
+            "size": 8213522027
+          },
+          "Subs": {
+            "priority": 4,
+            "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/Subs",
+            "progress": 1.0,
+            "progresses": [
+              1134.24,
+              156282.88
+            ],
+            "type": "dir",
+            "contents": {
+              "The.Man.idx": {
+                "priority": 4,
+                "index": 1,
+                "offset": 68880635,
+                "progress": 1.0,
+                "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/Subs/The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS.idx",
+                "type": "file",
+                "size": 113424
+              },
+              "The.Man.sub": {
+                "priority": 4,
+                "index": 2,
+                "offset": 68994059,
+                "progress": 1.0,
+                "path": "The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS/Subs/The.Man.Who.Knew.Infinity.2015.LIMITED.1080p.BluRay.x264-GECKOS.sub",
+                "type": "file",
+                "size": 15628288
+              }
+            },
+            "size": 15741712
+          }
+        },
+        "size": 8298147718
+      }
+    }
+  },
+  "error": null
+}

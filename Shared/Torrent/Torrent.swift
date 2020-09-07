@@ -8,37 +8,6 @@
 
 import Foundation
 
-let torrents: [Torrent] = {
-    
-    guard
-        let jsonURL = Bundle.main.url(forResource: "data", withExtension: "json"),
-        let jsonData = try? Data(contentsOf: jsonURL, options: .mappedIfSafe)
-    else {
-        fatalError("Could not load data.json.")
-    }
-    
-    do
-    {
-        let response = try JSONDecoder().decode(DelugeResponse<[String:Torrent]>.self, from: jsonData)
-        return Array(response.result.values)
-    }
-    catch
-    {
-        fatalError("\(error)")
-    }
-}()
-
-struct DelugeResponse<T: Decodable>: Decodable {
-    let id: String
-    let result: T
-    let error: DelugeError?
-}
-
-struct DelugeError: Decodable {
-    let message: String
-    let code: Int
-}
-
 struct Torrent: Decodable, Identifiable {
     var id: String { return hash }
     let active_time: Double?
